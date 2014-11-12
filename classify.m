@@ -20,9 +20,9 @@
 
 
 
-maxepoch=10; 
-numhid=500; numpen=500; numpen2=500; 
-pretrain_maxepoch = maxepoch;
+% maxepoch=10; 
+% numhid=500; numpen=500; numpen2=500; 
+maxepoch = pretrain_maxepoch;
 %fprintf(1,'Converting Raw files into Matlab format \n');
 %converter; 
 

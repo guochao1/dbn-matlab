@@ -166,6 +166,7 @@ end
 
 %saving data
 
+
 figure(1)
 plot(1:maxepoch, 100*train_err/(numcases*numbatches),'r', ...
     1:maxepoch, 100*test_err/(testnumcases*testnumbatches),'b');
