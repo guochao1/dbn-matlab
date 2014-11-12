@@ -1,0 +1,3 @@
+pretrain_maxepoch;numhid;numpen;numpen2;finetuning_maxepoch;conjugate_gradient_max_iter;res
+400;200;200;200;100;3;3.27
+
