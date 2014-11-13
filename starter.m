@@ -1,7 +1,7 @@
 clc;
 clear all
 close all
-for layer_sizes = 100:100:500
+for layer_sizes = 500:100:700
 
 res_sum = 0;
 for rounds = 1:10
@@ -20,10 +20,10 @@ for rounds = 1:10
 
     fprintf(1,'Round:%i \n',rounds);
 
-%     classify;
+    classify;
     close all;
     clc;     
-%     res_sum = res_sum + (100*test_err(maxepoch)/(numcases*numbatches));
+    res_sum = res_sum + (100*test_err(maxepoch)/(numcases*numbatches));
 end
 
 res = res_sum/10;
