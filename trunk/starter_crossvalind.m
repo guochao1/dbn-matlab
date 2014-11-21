@@ -1,17 +1,17 @@
 clc;
 clear all
 close all
-for layer_sizes = 500:100:700
+for layer_sizes = 100:100:400
 %% Initialization
     res_sum = 0;
     curr_res = 0;
     % test_array = [];
     for rounds = 1:10
 %% Setting parameters        
-        pretrain_maxepoch = 400;
+        pretrain_maxepoch = 300;
     %     numhid=200; numpen=200; numpen2=200; 
          numhid=layer_sizes; numpen=layer_sizes; numpen2=layer_sizes; 
-        finetuning_maxepoch = 100;
+        finetuning_maxepoch = 200;
         conjugate_gradient_max_iter = 3;
 %% Selecting dataset
         curr_set = strcat('/set',num2str(rounds, '%02i'));
