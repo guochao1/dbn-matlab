@@ -9,8 +9,9 @@ for layer_sizes = 100:100:400
     for rounds = 1:10
 %% Setting parameters        
         pretrain_maxepoch = 300;
-    %     numhid=200; numpen=200; numpen2=200; 
-         numhid=layer_sizes; numpen=layer_sizes; numpen2=layer_sizes; 
+%         layer_sizes = 300;
+%         numhid=200; numpen=200; numpen2=200; 
+        numhid=layer_sizes; numpen=layer_sizes/2; numpen2=layer_sizes; 
         finetuning_maxepoch = 200;
         conjugate_gradient_max_iter = 3;
 %% Selecting dataset
