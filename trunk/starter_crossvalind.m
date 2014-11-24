@@ -1,7 +1,7 @@
 clc;
 clear all
 close all
-for layer_sizes = 100:100:400
+for layer_sizes = 400:100:600
 %% Initialization
     res_sum = 0;
     curr_res = 0;
