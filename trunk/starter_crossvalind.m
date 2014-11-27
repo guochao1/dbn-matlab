@@ -1,7 +1,7 @@
 clc;
 clear all
 close all
-for layer_sizes = 100:100:300
+for conjugate_gradient_max_iter = 3:1:5
 %% Initialization
     res_sum = 0;
     curr_res = 0;
@@ -9,9 +9,9 @@ for layer_sizes = 100:100:300
     for rounds = 1:10
 %% Setting parameters        
         pretrain_maxepoch = 300;
-%         layer_sizes = 300;
+        layer_sizes = 300;
 %         numhid=200; numpen=200; numpen2=200; 
-        numhid=layer_sizes; numpen=layer_sizes/2; numpen2=layer_sizes/4; 
+        numhid=layer_sizes; numpen=layer_sizes; numpen2=layer_sizes; 
         finetuning_maxepoch = 200;
         conjugate_gradient_max_iter = 3;
 %% Selecting dataset

@@ -38,3 +38,5 @@ pretrain_maxepoch;numhid;numpen;numpen2;finetuning_maxepoch;conjugate_gradient_m
 300;25;50;25;200;3;21.55
 300;50;100;50;200;3;21.50
 300;75;150;75;200;3;21.75
+300;100;200;100;200;3;21.55
+300;125;250;125;200;3;21.55
