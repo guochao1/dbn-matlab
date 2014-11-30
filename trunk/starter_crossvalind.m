@@ -13,7 +13,7 @@ for conjugate_gradient_max_iter = 3:1:5
 %         numhid=200; numpen=200; numpen2=200; 
         numhid=layer_sizes; numpen=layer_sizes; numpen2=layer_sizes; 
         finetuning_maxepoch = 200;
-        conjugate_gradient_max_iter = 3;
+%         conjugate_gradient_max_iter = 4;
 %% Selecting dataset
         curr_set = strcat('/set',num2str(rounds, '%02i'));
         f_train0 = strcat('normalize_softmax',curr_set,'/train0');
