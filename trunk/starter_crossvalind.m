@@ -1,7 +1,7 @@
 clc;
 clear all
 close all
-for conjugate_gradient_max_iter = 3:1:5
+for conjugate_gradient_max_iter = 4:1:6
 %% Initialization
     res_sum = 0;
     curr_res = 0;
